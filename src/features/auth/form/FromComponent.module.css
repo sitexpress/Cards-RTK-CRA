@@ -1,0 +1,95 @@
+.form {
+    width: 413px;
+    height: 552px;
+}
+
+.form_set_new_password_instructions {
+    width: 413px;
+    height: 456px;
+}
+
+.container_fields {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    margin: 0 auto;
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.checkbox_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.password_recovery_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.password_recovery{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.account_link_wrapper {
+    padding-top: 12px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.signup_link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #366EFF;
+}
+
+.set_new_password_instructions {
+    margin-top: 3px;
+    width:347px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.try_login_link {
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #366EFF;
+}

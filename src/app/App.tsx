@@ -1,12 +1,16 @@
-import { Counter } from "features/counter/Counter";
 import { useAppDispatch, useAppSelector } from "app/hooks";
 import { useEffect } from "react";
 import { appActions } from "app/app.slice";
-import { SignIn } from "features/auth/sign-in/SignIn";
+import { useNavigate } from "react-router-dom";
+import { CircularIndeterminate } from "app/progressBar/progressBar";
+
+import s from "./App.module.css"
 
 function App() {
   const isLoading = useAppSelector((state) => state.app.isLoading);
+  const isAppInitialized = useAppSelector((state) => state.app.isAppInitialized);
   const dispatch = useAppDispatch();
+  const navigate = useNavigate()
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,12 +19,10 @@ function App() {
   }, [])
 
 
-
+  if(!isAppInitialized) {navigate("/sign-in")}
   return (
-    <div className="App">
-      {isLoading && <h1>Loader...</h1>}
-      <SignIn/>
-      <Counter />
+    <div className={s.App}>
+      {isLoading && <CircularIndeterminate/>}
     </div>
   );
 }

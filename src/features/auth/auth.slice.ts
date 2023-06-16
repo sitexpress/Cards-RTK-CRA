@@ -8,7 +8,7 @@ import { createAppAsyncThunk } from "common/createAppAsyncThunk";
 //   // часто используемые функции в createAsyncThunk:
 //   // const  {dispatch, getState, rejectWithValue} = thunkAPI
 //   authApi.register(arg).then((res) => {
-//     console.log("sign-up/register:", res.data.addedUser);
+//     console.log("signUp/register:", res.data.addedUser);
 //   });
 // });
 

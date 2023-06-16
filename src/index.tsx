@@ -11,11 +11,11 @@ import { CheckEmail } from "features/packs/check-email";
 import { ForgotPassword } from "features/packs/forgot-password";
 import { Learn } from "features/packs/learn";
 import { Packs } from "features/packs/packs";
-import { SetNewPassword } from "features/packs/set-new-password";
 import { Profile } from "features/packs/profile";
-import { SignIn } from "features/auth/sign-in/SignIn";
+import { SignIn } from "features/auth/signInForm/SignIn";
 import App from "app/App";
-import { SignUp } from "features/auth/sign-up/SignUp";
+import { SignUp } from "features/auth/signUp/SignUp";
+import { SetNewPassword } from "features/auth/setNewPassword/SetNewPassword";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
